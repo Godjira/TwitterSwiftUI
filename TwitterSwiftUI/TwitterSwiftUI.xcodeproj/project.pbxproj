@@ -18,6 +18,7 @@
 		F909846429B49635007DD0F8 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F909846329B49635007DD0F8 /* NotificationsView.swift */; };
 		F909846629B49645007DD0F8 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F909846529B49645007DD0F8 /* MessagesView.swift */; };
 		F95CC47329B795F800781232 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95CC47229B795F800781232 /* ProfileView.swift */; };
+		F95CC47529B7D02D00781232 /* TweetFilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95CC47429B7D02D00781232 /* TweetFilterViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		F909846329B49635007DD0F8 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		F909846529B49645007DD0F8 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
 		F95CC47229B795F800781232 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		F95CC47429B7D02D00781232 /* TweetFilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetFilterViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +206,7 @@
 		F95CC47029B795DF00781232 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				F95CC47429B7D02D00781232 /* TweetFilterViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				F95CC47329B795F800781232 /* ProfileView.swift in Sources */,
 				F909844129B35987007DD0F8 /* ContentView.swift in Sources */,
 				F909845929B35D56007DD0F8 /* TweetsRowView.swift in Sources */,
+				F95CC47529B7D02D00781232 /* TweetFilterViewModel.swift in Sources */,
 				F909845629B35C3A007DD0F8 /* FeedView.swift in Sources */,
 				F909843F29B35987007DD0F8 /* TwitterSwiftUIApp.swift in Sources */,
 				F909846229B4961E007DD0F8 /* ExploreView.swift in Sources */,
