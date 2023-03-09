@@ -20,6 +20,10 @@
 		F95CC47329B795F800781232 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95CC47229B795F800781232 /* ProfileView.swift */; };
 		F95CC47529B7D02D00781232 /* TweetFilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95CC47429B7D02D00781232 /* TweetFilterViewModel.swift */; };
 		F95CC47A29BA000600781232 /* UserRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95CC47929BA000600781232 /* UserRowView.swift */; };
+		F95CC47F29BA2E8500781232 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95CC47E29BA2E8500781232 /* SideMenuView.swift */; };
+		F95CC48229BA2E9700781232 /* SideMenuRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95CC48129BA2E9700781232 /* SideMenuRowView.swift */; };
+		F95CC48429BA2EA000781232 /* SideMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95CC48329BA2EA000781232 /* SideMenuViewModel.swift */; };
+		F95CC48629BA30EE00781232 /* UserStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95CC48529BA30EE00781232 /* UserStatsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +41,10 @@
 		F95CC47229B795F800781232 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		F95CC47429B7D02D00781232 /* TweetFilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetFilterViewModel.swift; sourceTree = "<group>"; };
 		F95CC47929BA000600781232 /* UserRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRowView.swift; sourceTree = "<group>"; };
+		F95CC47E29BA2E8500781232 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
+		F95CC48129BA2E9700781232 /* SideMenuRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuRowView.swift; sourceTree = "<group>"; };
+		F95CC48329BA2EA000781232 /* SideMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewModel.swift; sourceTree = "<group>"; };
+		F95CC48529BA30EE00781232 /* UserStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				F909845129B35BA7007DD0F8 /* Components */,
+				F95CC47B29BA2E5D00781232 /* SideMenu */,
 				F909846029B495EB007DD0F8 /* Profile */,
 				F909845F29B495E1007DD0F8 /* Messages */,
 				F909845E29B495DB007DD0F8 /* Notifications */,
@@ -242,8 +251,35 @@
 			isa = PBXGroup;
 			children = (
 				F95CC47929BA000600781232 /* UserRowView.swift */,
+				F95CC48529BA30EE00781232 /* UserStatsView.swift */,
 			);
 			path = Users;
+			sourceTree = "<group>";
+		};
+		F95CC47B29BA2E5D00781232 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				F95CC47C29BA2E6300781232 /* ViewModels */,
+				F95CC47D29BA2E6700781232 /* Views */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		F95CC47C29BA2E6300781232 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F95CC48329BA2EA000781232 /* SideMenuViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F95CC47D29BA2E6700781232 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F95CC47E29BA2E8500781232 /* SideMenuView.swift */,
+				F95CC48129BA2E9700781232 /* SideMenuRowView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,14 +355,18 @@
 				F909846629B49645007DD0F8 /* MessagesView.swift in Sources */,
 				F95CC47329B795F800781232 /* ProfileView.swift in Sources */,
 				F909844129B35987007DD0F8 /* ContentView.swift in Sources */,
+				F95CC48229BA2E9700781232 /* SideMenuRowView.swift in Sources */,
 				F909845929B35D56007DD0F8 /* TweetsRowView.swift in Sources */,
 				F95CC47529B7D02D00781232 /* TweetFilterViewModel.swift in Sources */,
 				F909845629B35C3A007DD0F8 /* FeedView.swift in Sources */,
+				F95CC47F29BA2E8500781232 /* SideMenuView.swift in Sources */,
 				F909843F29B35987007DD0F8 /* TwitterSwiftUIApp.swift in Sources */,
 				F909846229B4961E007DD0F8 /* ExploreView.swift in Sources */,
+				F95CC48429BA2EA000781232 /* SideMenuViewModel.swift in Sources */,
 				F95CC47A29BA000600781232 /* UserRowView.swift in Sources */,
 				F909845C29B48E80007DD0F8 /* MainTabView.swift in Sources */,
 				F909846429B49635007DD0F8 /* NotificationsView.swift in Sources */,
+				F95CC48629BA30EE00781232 /* UserStatsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
