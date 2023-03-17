@@ -53,7 +53,7 @@ struct RegistrationView: View {
             Spacer()
             
             Button {
-                presentationMode.wrappedValue.dismiss()
+                presentationMode.wrappedValue.dismiss() 
             } label: {
                 Text("Already have account?")
                     .font(.footnote)
