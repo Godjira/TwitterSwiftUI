@@ -37,6 +37,7 @@
 		F997F14129C492B100C3D2AD /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F997F14029C492B100C3D2AD /* FirebaseFirestore */; };
 		F997F14329C492B100C3D2AD /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F997F14229C492B100C3D2AD /* FirebaseFirestoreSwift */; };
 		F997F14529C492B100C3D2AD /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = F997F14429C492B100C3D2AD /* FirebaseStorage */; };
+		F997F14729C4ABBE00C3D2AD /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F997F14629C4ABBE00C3D2AD /* AuthViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		F95CC48529BA30EE00781232 /* UserStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatsView.swift; sourceTree = "<group>"; };
 		F95CC48829BA647700781232 /* SideMenuOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOptionView.swift; sourceTree = "<group>"; };
 		F997F13B29C490BA00C3D2AD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F997F14629C4ABBE00C3D2AD /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -294,6 +296,7 @@
 		F91BF4C529C09C6800A0F84B /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				F997F14629C4ABBE00C3D2AD /* AuthViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -473,6 +476,7 @@
 				F95CC47A29BA000600781232 /* UserRowView.swift in Sources */,
 				F91BF4C929C09E8A00A0F84B /* RoundedShape.swift in Sources */,
 				F909845C29B48E80007DD0F8 /* MainTabView.swift in Sources */,
+				F997F14729C4ABBE00C3D2AD /* AuthViewModel.swift in Sources */,
 				F91BF4C729C09C7E00A0F84B /* LoginView.swift in Sources */,
 				F909846429B49635007DD0F8 /* NotificationsView.swift in Sources */,
 				F95CC48629BA30EE00781232 /* UserStatsView.swift in Sources */,

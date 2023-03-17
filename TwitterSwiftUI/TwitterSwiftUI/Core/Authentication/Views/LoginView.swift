@@ -11,6 +11,8 @@ struct LoginView: View {
     @State private var email = ""
     @State private var password = ""
     
+    @EnvironmentObject var authVM: AuthViewModel
+
     var body: some View {
         // parent container
         VStack {
@@ -19,7 +21,7 @@ struct LoginView: View {
             
             VStack(spacing: 40) {
                 CustomInputField(imageName: "envelope", placeholderText: "Email", text: $email)
-                CustomInputField(imageName: "lock", placeholderText: "Password", text: $password)
+                CustomInputField(imageName: "lock", placeholderText: "Password", isSecureField: true, text: $password)
             }
             .padding(.horizontal, 32)
             .padding(.top, 44)
@@ -41,7 +43,7 @@ struct LoginView: View {
 
             }
             Button {
-                print("Sing In...")
+                authVM.logIn(with: email, and: password)
             } label: {
                 Text("Sing In")
                     .font(.headline)
@@ -57,6 +59,7 @@ struct LoginView: View {
 
             NavigationLink {
                 RegistrationView()
+                    .environmentObject(authVM)
                     .navigationBarHidden(true)
             } label: {
                 HStack {
