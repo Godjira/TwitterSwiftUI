@@ -19,7 +19,7 @@ struct ContentView: View {
                 LoginView()
                     .environmentObject(authVM)
             } else {
-                // have a logged in user
+//                // have a logged in user
                 mainInterfaceView
             }
         }

@@ -38,6 +38,9 @@
 		F997F14329C492B100C3D2AD /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F997F14229C492B100C3D2AD /* FirebaseFirestoreSwift */; };
 		F997F14529C492B100C3D2AD /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = F997F14429C492B100C3D2AD /* FirebaseStorage */; };
 		F997F14729C4ABBE00C3D2AD /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F997F14629C4ABBE00C3D2AD /* AuthViewModel.swift */; };
+		F9C1143E29C6AE0900E67C44 /* ProfilePhotoSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C1143D29C6AE0900E67C44 /* ProfilePhotoSelectorView.swift */; };
+		F9C1144129C6B35600E67C44 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C1144029C6B35500E67C44 /* ImagePicker.swift */; };
+		F9E1DA8A29C8BBB000B23C0A /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E1DA8929C8BBB000B23C0A /* ImageUploader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +72,9 @@
 		F95CC48829BA647700781232 /* SideMenuOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOptionView.swift; sourceTree = "<group>"; };
 		F997F13B29C490BA00C3D2AD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F997F14629C4ABBE00C3D2AD /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		F9C1143D29C6AE0900E67C44 /* ProfilePhotoSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoSelectorView.swift; sourceTree = "<group>"; };
+		F9C1144029C6B35500E67C44 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		F9E1DA8929C8BBB000B23C0A /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +111,6 @@
 		F909843D29B35987007DD0F8 /* TwitterSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				F91BF4BA29BCBDC500A0F84B /* UploadTweet */,
 				F909845029B35B83007DD0F8 /* Model */,
 				F909844F29B35B82007DD0F8 /* Extension */,
 				F909844C29B35B78007DD0F8 /* Service */,
@@ -130,6 +135,7 @@
 		F909844C29B35B78007DD0F8 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				F9E1DA8929C8BBB000B23C0A /* ImageUploader.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -138,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				F909845129B35BA7007DD0F8 /* Components */,
+				F91BF4BA29BCBDC500A0F84B /* UploadTweet */,
 				F91BF4C329C09A2A00A0F84B /* Authentication */,
 				F95CC47B29BA2E5D00781232 /* SideMenu */,
 				F909846029B495EB007DD0F8 /* Profile */,
@@ -167,6 +174,7 @@
 		F909845129B35BA7007DD0F8 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				F9C1143F29C6B33F00E67C44 /* Utils */,
 				F91BF4D029C0DA1700A0F84B /* Authentication */,
 				F95CC47829B9FFFA00781232 /* Users */,
 				F909845729B35D10007DD0F8 /* Tweets */,
@@ -289,6 +297,7 @@
 			children = (
 				F91BF4C629C09C7E00A0F84B /* LoginView.swift */,
 				F91BF4CA29C0CDD200A0F84B /* RegistrationView.swift */,
+				F9C1143D29C6AE0900E67C44 /* ProfilePhotoSelectorView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -374,6 +383,14 @@
 				F95CC48829BA647700781232 /* SideMenuOptionView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F9C1143F29C6B33F00E67C44 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F9C1144029C6B35500E67C44 /* ImagePicker.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -469,7 +486,9 @@
 				F91BF4C229BCFAD900A0F84B /* TextArea.swift in Sources */,
 				F909845629B35C3A007DD0F8 /* FeedView.swift in Sources */,
 				F95CC47F29BA2E8500781232 /* SideMenuView.swift in Sources */,
+				F9C1144129C6B35600E67C44 /* ImagePicker.swift in Sources */,
 				F91BF4BE29BCBDF200A0F84B /* NewTweetView.swift in Sources */,
+				F9C1143E29C6AE0900E67C44 /* ProfilePhotoSelectorView.swift in Sources */,
 				F909843F29B35987007DD0F8 /* TwitterSwiftUIApp.swift in Sources */,
 				F909846229B4961E007DD0F8 /* ExploreView.swift in Sources */,
 				F95CC48429BA2EA000781232 /* SideMenuViewModel.swift in Sources */,
@@ -477,6 +496,7 @@
 				F91BF4C929C09E8A00A0F84B /* RoundedShape.swift in Sources */,
 				F909845C29B48E80007DD0F8 /* MainTabView.swift in Sources */,
 				F997F14729C4ABBE00C3D2AD /* AuthViewModel.swift in Sources */,
+				F9E1DA8A29C8BBB000B23C0A /* ImageUploader.swift in Sources */,
 				F91BF4C729C09C7E00A0F84B /* LoginView.swift in Sources */,
 				F909846429B49635007DD0F8 /* NotificationsView.swift in Sources */,
 				F95CC48629BA30EE00781232 /* UserStatsView.swift in Sources */,
@@ -611,11 +631,13 @@
 				DEVELOPMENT_TEAM = 8XKG9LNKYV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -640,11 +662,13 @@
 				DEVELOPMENT_TEAM = 8XKG9LNKYV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

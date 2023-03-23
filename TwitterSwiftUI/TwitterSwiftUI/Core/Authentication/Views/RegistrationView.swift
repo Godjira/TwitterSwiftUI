@@ -19,6 +19,13 @@ struct RegistrationView: View {
 
     var body: some View {
         VStack {
+            NavigationLink(destination: ProfilePhotoSelectorView()
+                .environmentObject(authVM),
+                           isActive: $authVM.didAuthenticateUser) {
+                
+            }
+
+            
             AuthHeaderView(title1: "Get started.", title2: "Create new account")
                 .ignoresSafeArea()
             
